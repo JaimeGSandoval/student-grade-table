@@ -55,8 +55,8 @@ class App {
       },
       url: "https://sgt.lfzprototypes.com/api/grades",
       method: "POST",
-      success: this.handleGetGradesSuccess,
-      error: this.handleGetGradesError
+      success: this.handleCreateGradeSuccess,
+      error: this.handleGradeError
     })
     this.getGrades();
   }
