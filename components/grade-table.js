@@ -10,7 +10,7 @@ class GradeTable {
     }
 
 
-    console.log(grades)
+
 
     for (var i = 0; i < grades.length; i++) {
       var tr = document.createElement('tr');
