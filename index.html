@@ -12,7 +12,17 @@
 
 <body>
   <div class="container">
-    <h1 class="mt-5 mb-4">Student Grade Table</h1>
+    <header class="row header">
+      <div class="col">
+        <h1 class="mt-5 mb-4">Student Grade Table</h1>
+      </div>
+
+      <div class="col average-box">
+        <h4>Average Grade <span class="averageGrade badge badge-primary ml-2 mt-5"></span></h4>
+
+      </div>
+    </header>
+
     <table class="col-12 table">
       <tr>
         <thead class="bg-secondary">
@@ -33,6 +43,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
     integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
     crossorigin="anonymous"></script>
+  <script src="components/page-header.js"></script>
   <script src="components/grade-table.js"></script>
   <script src="components/app.js"></script>
   <script src='main.js'></script>
