@@ -58,7 +58,6 @@ class App {
       success: this.handleCreateGradeSuccess,
       error: this.handleGradeError
     })
-    this.getGrades();
   }
 
   handleGradeError(error) {
