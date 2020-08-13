@@ -9,7 +9,7 @@ class App {
     this.handleCreateGradeSuccess = this.handleCreateGradeSuccess.bind(this);
     this.gradeForm = gradeForm;
     this.deleteGrade = this.deleteGrade.bind(this);
-    this.deleteGradeError = this.deleteGradeError.bind(this);
+    this.handleDeleteGradeError = this.handleDeleteGradeError.bind(this);
     this.handleDeleteGradeSuccess = this.handleDeleteGradeSuccess.bind(this);
 
   }
@@ -59,11 +59,11 @@ class App {
       url: "https://sgt.lfzprototypes.com/api/grades",
       method: "POST",
       success: this.handleCreateGradeSuccess,
-      error: this.handleGradeError
+      error: this.handleCreateGradeError
     })
   }
 
-  handleGradeError(error) {
+  handleCreateGradeError(error) {
     console.log(error);
   }
 
@@ -73,9 +73,18 @@ class App {
 
   deleteGrade(id) {
     console.log(id);
+    $.ajax({
+      headers: {
+        "X-Access-Token": "S0q6EVR2"
+      },
+      url: "https://sgt.lfzprototypes.com/api/grades/" + id,
+      method: "DELETE",
+      success: this.handleDeleteGradeSuccess,
+      error: this.handleDeleteGradeError
+    })
   }
 
-  deleteGradeError(error) {
+  handleDeleteGradeError(error) {
     console.log(error);
   }
 
@@ -86,5 +95,6 @@ class App {
   start() {
     this.getGrades();
     this.gradeForm.onSubmit(this.createGrade);
+    this.gradeTable.onDeleteClick(this.deleteGrade);
   }
 }

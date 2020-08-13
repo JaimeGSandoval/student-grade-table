@@ -1,12 +1,17 @@
 class GradeTable {
-  constructor(tableElement) {
+  constructor(tableElement, noGradesElement) {
     this.tableElement = tableElement;
+    this.noGradesElement = noGradesElement;
   }
 
   updateGrades(grades) {
     var tableBody = document.querySelector('tbody');
     while (tableBody.firstChild) {
       tableBody.removeChild(tableBody.firstChild);
+    }
+
+    if (!grades) {
+      this.btn.classList.remove('d-none');
     }
 
     for (var i = 0; i < grades.length; i++) {
