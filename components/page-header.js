@@ -5,6 +5,10 @@ class PageHeader {
 
   updateAverage(newAverage) {
     var averageNum = document.querySelector('.averageGrade');
-    averageNum.textContent = newAverage;
+    if (!newAverage) {
+      averageNum.textContent = '0'
+    } else {
+      averageNum.textContent = newAverage;
+    }
   }
 }
