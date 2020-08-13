@@ -10,20 +10,13 @@ class GradeTable {
       tableBody.removeChild(tableBody.firstChild);
     }
 
-    if (!grades) {
+    if (grades) {
       this.btn.classList.remove('d-none');
+    } else {
+      this.btn.classList.add('d-none');
     }
 
     for (var i = 0; i < grades.length; i++) {
-      // var tr = document.createElement('tr');
-      // var name = document.createElement('td');
-      // var course = document.createElement('td');
-      // var grade = document.createElement('td');
-      // name.textContent = grades[i].name;
-      // course.textContent = grades[i].course;
-      // grade.textContent = grades[i].grade;
-      // tr.append(name, course, grade);
-
       var tr = this.renderGradeRow(grades[i], this.deleteGrade);
       tableBody.appendChild(tr);
     }
