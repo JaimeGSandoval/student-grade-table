@@ -6,21 +6,21 @@ class GradeTable {
 
   updateGrades(grades) {
     var tableBody = document.querySelector('tbody');
+
     while (tableBody.firstChild) {
       tableBody.removeChild(tableBody.firstChild);
     }
 
-    if (grades) {
-      this.btn.classList.remove('d-none');
+    if (grades.length === 0) {
+      this.noGradesElement.classList.remove('d-none');
     } else {
-      this.btn.classList.add('d-none');
+      this.noGradesElement.classList.add('d-none');
     }
 
     for (var i = 0; i < grades.length; i++) {
       var tr = this.renderGradeRow(grades[i], this.deleteGrade);
       tableBody.appendChild(tr);
     }
-
   }
 
   onDeleteClick(deleteGrade) {
