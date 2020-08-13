@@ -2,83 +2,85 @@
 <html lang="en">
 
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-  integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-  crossorigin="anonymous" />
- <link rel="stylesheet" href="styles.css">
- <title>Student Grade Table</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles.css">
+  <title>Student Grade Table</title>
 </head>
 
 <body>
- <div class="container">
-  <header class="row header">
-   <div class="col">
-    <h1 class="mt-5 mb-4">Student Grade Table</h1>
-   </div>
-
-   <div class="col average-box">
-    <h4>Average Grade <span class="averageGrade badge badge-primary ml-2 mt-5"></span></h4>
-
-   </div>
-  </header>
-  <div class="row">
-   <div class="col-9">
-    <table class="col table">
-     <tr>
-      <thead class="bg-secondary">
-       <th class="py-3">Student Name</th>
-       <th class="py-3">Course</th>
-       <th class="py-3">Grade</th>
-       <th class="py-3">Operations</th>
-      </thead>
-     </tr>
-     <tbody>
-
-     </tbody>
-    </table>
-    <p class="d-none noGradesText">No Grades Recorded</p>
-   </div>
-
-   <div class="col">
-    <form action="#">
-     <div class="form-group">
-      <i class="fas fa-user"></i>
-      <input class="mb-3" name="name" type="text" placeholder="Name">
-      <i class="fas fa-table"></i>
-      <input class="mb-3" type="text" name="course" placeholder="Course">
-      <i class="fas fa-graduation-cap"></i>
-      <input class="mb-3" type="text" name="grade" placeholder="Grade">
-      <div class="btn-box">
-       <button class="btn-success" type="submit">Add</button>
-       <button class="btn-success ml-2" type="reset">Cancel</button>
+  <div class="container">
+    <header class="row header">
+      <!-- col -->
+      <div class="col-12 col-md-6 col-lg-6">
+        <h1 class="mt-5 mb-4">Student Grade Table</h1>
+      </div>
+      <!-- col -->
+      <div class=" col-12 col-md-6 col-lg-6 average-box">
+        <h4>Average Grade <span class="averageGrade badge badge-primary ml-2 mt-5"></span></h4>
 
       </div>
+    </header>
+    <div class="row">
+      <!-- col-9 -->
+      <div class="col-12 col-md-9">
+        <table class="col-12 col table">
+          <tr>
+            <thead class="bg-secondary">
+              <th class="py-3">Student Name</th>
+              <th class="py-3">Course</th>
+              <th class="py-3">Grade</th>
+              <th class="py-3">Operations</th>
+            </thead>
+          </tr>
+          <tbody>
 
-     </div>
-   </div>
-   </form>
+          </tbody>
+        </table>
+        <p class="d-none noGradesText">No Grades Recorded</p>
+      </div>
+
+      <div class="col-12 col-md-3">
+        <form action="#">
+          <div class="form-group">
+            <i class="fas fa-user"></i>
+            <input class="mb-3" name="name" type="text" placeholder="Name">
+            <i class="fas fa-table"></i>
+            <input class="mb-3" type="text" name="course" placeholder="Course">
+            <i class="fas fa-graduation-cap"></i>
+            <input class="mb-3" type="text" name="grade" placeholder="Grade">
+            <div class="btn-box">
+              <button class="btn-success" type="submit">Add</button>
+              <button class="btn-success ml-2" type="reset">Cancel</button>
+
+            </div>
+
+          </div>
+      </div>
+      </form>
 
 
 
+
+    </div>
 
   </div>
 
- </div>
 
 
-
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-  integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-  crossorigin="anonymous"></script>
- <script src="components/grade-form.js"></script>
- <script src="components/page-header.js"></script>
- <script src="components/grade-table.js"></script>
- <script src="components/app.js"></script>
- <script src='main.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"></script>
+  <script src="components/grade-form.js"></script>
+  <script src="components/page-header.js"></script>
+  <script src="components/grade-table.js"></script>
+  <script src="components/app.js"></script>
+  <script src='main.js'></script>
 </body>
 
 </html>
