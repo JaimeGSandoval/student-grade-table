@@ -1,6 +1,5 @@
 // "S0q6EVR2"
 var table = document.querySelector('table');
-
 var noGradesText = document.querySelector('.noGradesText');
 var headerEl = document.querySelector('header');
 var formEl = document.querySelector('form');
