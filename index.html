@@ -16,20 +16,18 @@
 <body>
   <div class="container">
     <header class="row header">
-      <!-- col -->
-      <div class="col-12 col-md-6 col-lg-6">
+      <div class="col">
         <h1 class="mt-5 mb-4">Student Grade Table</h1>
       </div>
-      <!-- col -->
-      <div class=" col-12 col-md-6 col-lg-6 average-box">
+
+      <div class="col average-box">
         <h4>Average Grade <span class="averageGrade badge badge-primary ml-2 mt-5"></span></h4>
 
       </div>
     </header>
     <div class="row">
-      <!-- col-9 -->
-      <div class="col-12 col-md-9">
-        <table class="col-12 col table">
+      <div class="col-9">
+        <table class="col table">
           <tr>
             <thead class="bg-secondary">
               <th class="py-3">Student Name</th>
@@ -45,7 +43,7 @@
         <p class="d-none noGradesText">No Grades Recorded</p>
       </div>
 
-      <div class="col-12 col-md-3">
+      <div class="col">
         <form action="#">
           <div class="form-group">
 
@@ -53,39 +51,32 @@
               <div class="input-group-prepend">
                 <span class="input-group-text"><i class="fas fa-user"></i></span>
               </div>
-              <input type="text" class="form-control" placeholder="Name" aria-label="Name">
+              <input type="text" class="form-control" placeholder="Name" name="name" aria-label="Name">
             </div>
 
             <div class="input-group mb-3">
               <div class="input-group-prepend">
                 <span class="input-group-text"><i class="fas fa-table"></i></span>
               </div>
-              <input type="text" class="form-control" placeholder="Course" aria-label="Course">
+              <input type="text" class="form-control" placeholder="Course" name="course" aria-label="Course">
             </div>
 
             <div class="input-group mb-3">
               <div class="input-group-prepend">
                 <span class="input-group-text"><i class="fas fa-graduation-cap"></i></span>
               </div>
-              <input type="text" class="form-control" placeholder="Grade" aria-label="Grade">
+              <input type="text" class="form-control" placeholder="Grade" name="grade" aria-label="Grade">
             </div>
-
 
             <div class="btn-box">
               <button class="btn-success" type="submit">Add</button>
               <button class="btn-success ml-2" type="reset">Cancel</button>
-
             </div>
 
           </div>
       </div>
       </form>
-
-
-
-
     </div>
-
   </div>
 
 
