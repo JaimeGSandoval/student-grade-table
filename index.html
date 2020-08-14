@@ -48,12 +48,29 @@
       <div class="col-12 col-md-3">
         <form action="#">
           <div class="form-group">
-            <i class="fas fa-user"></i>
-            <input class="mb-3" name="name" type="text" placeholder="Name">
-            <i class="fas fa-table"></i>
-            <input class="mb-3" type="text" name="course" placeholder="Course">
-            <i class="fas fa-graduation-cap"></i>
-            <input class="mb-3" type="text" name="grade" placeholder="Grade">
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-user"></i></span>
+              </div>
+              <input type="text" class="form-control" placeholder="Name" aria-label="Name">
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-table"></i></span>
+              </div>
+              <input type="text" class="form-control" placeholder="Course" aria-label="Course">
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-graduation-cap"></i></span>
+              </div>
+              <input type="text" class="form-control" placeholder="Grade" aria-label="Grade">
+            </div>
+
+
             <div class="btn-box">
               <button class="btn-success" type="submit">Add</button>
               <button class="btn-success ml-2" type="reset">Cancel</button>
